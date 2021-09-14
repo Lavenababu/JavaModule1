@@ -10,10 +10,12 @@ public class ATM {
     public static void main(String[] args) {
 
         double amt_to_withdraw = 20, acc_balance = 1000;
+        if(amt_to_withdraw>0 && amt_to_withdraw<=2000 && amt_to_withdraw%5==0 && acc_balance>0 && amt_to_withdraw +.5<acc_balance)
+        {
+            acc_balance = acc_balance - amt_to_withdraw+.5;
+        }
 
-        System.out.println();
-
-
+            System.out.println("Balance : "+acc_balance);
 
     }
 }
